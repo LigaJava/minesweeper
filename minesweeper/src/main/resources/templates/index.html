@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Minesweeper</title>
+    <style>
+        .field {
+        width: 35px;
+        height: 35px;
+        float: left;
+        border: solid 1px black;
+        background-color: dark gray;
+        }
+
+        .row {
+        float: none;
+        clear: left;
+        }
+
+        .field-icon {
+        width: 25px;
+        height: 25px;
+        margin: 5px;
+        }
+
+        .field-empty {
+        width: 35px;
+        height: 35px;
+        background-color: yellow;
+        }
+
+        .field-closed {
+        width: 35px;
+        height: 35px;
+        background-color: black;
+        display: block;
+        text-decoration: none;
+        }
+
+        .field-number {
+        width: 35px;
+        height: 35px;
+        background-color: burlywood;
+        text-align: center;
+        }
+          .field-bomb {
+        width: 35px;
+        height: 35px;
+        background-color: pink;
+        }
+
+        .number {
+        font-family: Arial;
+        font-size: large;
+        padding-top: 5px;
+        }
+           </style>
+</head>
+<body>
+<div th:utext="${game}"></div>
+<p th:text="${counter}"></p>
+<!--<p th:text="${counter}"></p>-->
+
+<!--<img th:src="@{/img/bomb.svg}" style="width: 30px; height: 30px">-->
+<!--<a href="/?i=1&j=1" >asdfasdfa</a>-->
+<!--<a href="/1/2" >asdfasdfa</a>-->
+</body>
+</html>
